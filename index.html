@@ -3,88 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма бронювання готелю</title>
+    <title>Фільм Інтерстеллар</title>
 </head>
 <body>
-    <h1>Бронювання номера в готелі</h1>
-    <form action="#" method="post"
-    <div>
-        <label for="first-name">іМ'я та прізвище: *</label>
-        <input type="text" id="first-name" name="first_name" required>
-    </div>
-    <br>
-    <div>
-        <label for="email">Електронна пошта: *</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <br>
-    <div>
-        <label for="check-in">Дата заїзду: *</label>
-        <input type="date" id="check-in" name="check_in" required>
-    </div>
-    <br>
-    <div>
-        <label for="check-out">Дата виїзду: *</label>
-        <input type="date" id="check-out" name="check_out" required>
-    </div>
-    <br>
-    <div>
-        <label for="guests">Кількість гостей: *</label>
-        <input type="number" id="guests" name="guests" min="1" required>
-    </div>
-    <br>
-    <fieldset>
-        <legend>Тип номера: *</legend>
-        <div>
-            <input type="radio" id="single" name="room_type" value="standard" required>
-            <label for="single">СТандарт</label>
-            <br>
+    <!-- Навігація -->
+     <nav>
+        <a href="index.html">Голова</a> |
+        <a href="info.html">Про фільми</a>
+     </nav>
+     <!-- Головний заголовок-->
+      <h1>Інтерстеллар</h1>
+      <!-- Два підзаголовки різних рівнів -->
+       <h2>Про науково-фантастичний шедевр</h2>
+       <h3>Сюжет та концепція</h3>
 
-            <input type="radio" id="double" name="room_type" value="junior_suite">
-            <label for="double">Напівлюкс</label>
-            <br>
+       <!--Два абзаци з вимогами (strong, em, br)-->
+       <p>
+        Коли посуха та голод загрожують майбутньому людстваб, група дослідників вирушає у <strong>найважливішу місію</strong> в історії.<br>
+        Вони повинні знайти нову придатну для життя планету.
+       </p>
 
-            <input type="radio" id="suite" name="room_type" value="suite">
-            <label for="suite">Люкс</label>
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>Додаткові послуги:</legend>
-        <div>
-            <input type="checkbox" id="service-breakfast" name="services" value="breakfast">
-            <label for="service-breakfast">Сніданок</label>
-            <br>
-            <input type="checkbox" id="service-parking" name="services" value="parking">
-            <label for="service-parking">Паркінг</label>
-            <br>
-            <input type="checkbox" id="service-transfer" name="services" value="transfer">
-            <label for="service-transfer">Трансфер</label>
-            <br>
-            <input type="checkbox" id="service-cleaning" name="services" value="cleaning">
-            <label for="service-cleaning">Додаткове прибирання</label>
-    </fieldset>
-    <br>
-    <div>
-        <label for="city">Оберіть місто:</label>
-        <select id="city" name="city">
-            <option value="kyiv">Київ</option>
-            <option value="lviv">Львів</option>
-            <option value="odesa">Одеса</option>
-            <option value="uzhhorod">Ужгород</option>
-            <option value="chernivtsi">Чернівці</option>
-        </select>
-    </div>
-    <br>
-    <div>
-        <label for="wishes">Додаткові побажання (максимально 250 символів):</label>
-        <br>
-        <textarea id="wishes" name="wishes" rows="5" cols="40" maxlength="250"></textarea>
-     </div>
-     <br>
-     <div>
-        <button type="submit">Забронювати</button>
-     <button type="reset">Очистити форму</button>
-     </div>
-  </form>
+       <p>
+        Ця стрічка не лише про космос, а й про <em>глибокий любовний зв'язок</em> між батьком та донькою, який долає час і простір.
+       </p>
+
+       <!-- Тематичний розділювач -->
+        <hr>
+
+        <!-- Ненумерований перелік із 4 пунктів -->
+         <h2>Основні персонажі</h2>
+         <ul>
+            <li>Джозеф Купер</li>
+            <li>Амелія Бренд</li>
+            <li>Мерф Бренд</li>
+            <li>Робот TARS</li>
+         </ul>
+
+         <!-- Нумерований перелік із 3 пунктів -->
+          <h2>Причини переглянути фільм</h2>
+          <ol>
+            <li>Неймовірна музика Ханса Циммера</li>
+            <li>Наукова точність у зображенні чорних дір</li>
+            <li>Сильна емоційна акторська гра</li> 
+          </ol>
+
+          <!-- Контейнер: заголовок, коротки текст і кнопка  -->
+           <div>
+            <h2>Дивитися трейлер</h2>
+            <p>Натисніть кнопку нижче, щоб ознайомитися з офійним промо-роликом.</p>
+            <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank">
+             <button>Дивитися</button>  
+            </a>
+           </div>
+
+           <!-- Постер із локальної папки, шириною, alt та підписом -->
+            <h2 id="poster-section">Постер фільму</h2>
+            <figure>
+                <img src="./image.jpg" alt="Постер фільму Інтерстеллар" width="300">
+                <figcaption>Офіційний постер до фільму <<Інтерстеллар>> (2014)</figcaption>
+            </figure>
+
+            <!-- Зовнішнє посилання в новій вкладці -->
+             <p>
+                Детальніше про фільм на
+                <a href="https://www.imdb.com/title/tt0816692/" targets="_blank">IMDb</a>.
+             </p>
+
+             <!-- Перехід до певної частини цієї ж сторінки -->
+            </p>
+            
 </body>
 </html>
