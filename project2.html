@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма бронювання готелю</title>
+</head>
+<body>
+    <h1>Бронювання номера в готелі</h1>
+    <form action="#" method="post"
+    <div>
+        <label for="first-name">іМ'я та прізвище: *</label>
+        <input type="text" id="first-name" name="first_name" required>
+    </div>
+    <br>
+    <div>
+        <label for="email">Електронна пошта: *</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+    <div>
+        <label for="check-in">Дата заїзду: *</label>
+        <input type="date" id="check-in" name="check_in" required>
+    </div>
+    <br>
+    <div>
+        <label for="check-out">Дата виїзду: *</label>
+        <input type="date" id="check-out" name="check_out" required>
+    </div>
+    <br>
+    <div>
+        <label for="guests">Кількість гостей: *</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+    </div>
+    <br>
+    <fieldset>
+        <legend>Тип номера: *</legend>
+        <div>
+            <input type="radio" id="single" name="room_type" value="standard" required>
+            <label for="single">СТандарт</label>
+            <br>
+
+            <input type="radio" id="double" name="room_type" value="junior_suite">
+            <label for="double">Напівлюкс</label>
+            <br>
+
+            <input type="radio" id="suite" name="room_type" value="suite">
+            <label for="suite">Люкс</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Додаткові послуги:</legend>
+        <div>
+            <input type="checkbox" id="service-breakfast" name="services" value="breakfast">
+            <label for="service-breakfast">Сніданок</label>
+            <br>
+            <input type="checkbox" id="service-parking" name="services" value="parking">
+            <label for="service-parking">Паркінг</label>
+            <br>
+            <input type="checkbox" id="service-transfer" name="services" value="transfer">
+            <label for="service-transfer">Трансфер</label>
+            <br>
+            <input type="checkbox" id="service-cleaning" name="services" value="cleaning">
+            <label for="service-cleaning">Додаткове прибирання</label>
+    </fieldset>
+    <br>
+    <div>
+        <label for="city">Оберіть місто:</label>
+        <select id="city" name="city">
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+            <option value="uzhhorod">Ужгород</option>
+            <option value="chernivtsi">Чернівці</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="wishes">Додаткові побажання (максимально 250 символів):</label>
+        <br>
+        <textarea id="wishes" name="wishes" rows="5" cols="40" maxlength="250"></textarea>
+     </div>
+     <br>
+     <div>
+        <button type="submit">Забронювати</button>
+     <button type="reset">Очистити форму</button>
+     </div>
+  </form>
+</body>
+</html>
