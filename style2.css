@@ -1,0 +1,116 @@
+body {
+    front-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px ;
+    text-align: center;
+}
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+section {
+    margin-bottom: 40px;
+    backround: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.static-box {
+    position: static;
+    border: 1px solid black;
+    padding: 20px;
+    margi: 10px;
+}
+.static-test {
+    top: 50px;
+
+}
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+}
+.product {
+    position: relative;
+    width: 300px;
+    border: 1px solid #grey;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.price {
+    font-weight: bolt;
+
+}
+.banner {
+    position: relative;
+    width: 500px;
+    margin:20px;
+}
+.banner img {
+    width: 100%;
+}
+.banner-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+}
+.help {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px ;
+    border: none;
+    border-radius: 10px;
+} 
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #white;
+    padding: 20px;
+    z-index: 100;
+}   
+.laters {
+    poosition: relative;
+    height: 250px;
+}
+.box1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 100px;
+    z-index: 1;
+    background-color: lightblue;
+}
+.box2 {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 150px;
+    height: 100px;
+    z-index: 2;
+    background-color: lightcoral;
+}
