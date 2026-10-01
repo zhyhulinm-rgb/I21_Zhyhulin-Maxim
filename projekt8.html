@@ -3,78 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Інтернет-магазин - Позиціонування в CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Інтернет-магазин</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+
     <header>
         <h1>Tech Store</h1>
     </header>
+
     <nav class="menu">
-        <a href="#products">Головна</a>
-        <a href="#products">Товари</a>
-        <a href="#footer">Контакти</a>
+        <a href="#">Головна</a>
+        <a href="#">Товари</a>
+        <a href="#">Контакти</a>
     </nav>
+
     <main>
-        <selection id="static">
-            <h2>Завдання 1. position: static</h2>
-            <div class="static-box static-test">
-                Перший блок
-            </div>
-            <div class="static-box">
-                Другий блок
-            </div>
-            <div class="static-box">
-                Третій блок
-            </div>
-        </selection>
-        <selection id="products">
-            <h2>Популярні товари</h2>
-            <div class="products-container">
-                <div class="product">
-                    <span class="discount">-20%</span>
-                    <h2>Ноутбук</h2>
-                    <p>Ноутбуки для навчання та роботи.</p>
-                    <p class="price">25000 грн</p>
-                </div>
-                <div class="product">
-                    <span class="discount">-15%</span>
-                    <h2>Смартфон</h2>
-                    <p>Потужний смартфон з якісною камерою.</p>
-                    <p class="price">15000 грн</p>
-            </div>
-            <div class="product">
-                <span class="discount">-10%</span>
-                <h2>Навушники</h2>
-                <p>Безпровідні навушники для музики та дзвінків.</p>
-                <p class="price">3500 грн</p>
-            </div>
+        <div class="static-box static-test">
+            Перший блок
         </div>
-        </selection>
-        <selection id="banner">
-            <h2>Завдання 4. Кнопка поверх зображення</h2>
-            <div class="banner">
-                <img src="https://via.placeholder.com/500x200"alt="Реклама">
-                <button class="banner-button">Детальніше</button>
-            </div>
-        </selection>
-        <selection id="layers">
-            <h2>Завдання 8. Накладання двох елементів</h2>
-            <div class="layer-container">
-                <div class="box1">Блок 1</div>
-                <div class="box2">Блок 2</div>
-            </div>
-        </selection>
-        <selection class="extra-container">
-            <p>Додатковий текст сторінки...</p>
-            <p>Додатковий текст сторінки...</p>
-            <p>Додатковий текст сторінки...</p>
-            <p>Додатковий текст сторінки...</p>
-            <p>Додатковий текст сторінки...</p>
-        </selection>
+        <div class="static-box">
+            Другий блок
+        </div>
+        <div class="static-box">
+            Третій блок
+        </div>
+
+        <div class="relative-box">
+            Цей блок зміщений
+        </div>
+
+        <h2>Популярні товари</h2>
+
+        <div class="product">
+            <span class="discount">-20%</span>
+            <h2>Ноутбук</h2>
+            <p>Ноутбук для навчання та роботи.</p>
+            <p class="price">25 000 грн</p>
+        </div>
+
+        <div class="product">
+            <span class="discount">-15%</span>
+            <h2>Смартфон</h2>
+            <p>Потужний смартфон з якісною камерою.</p>
+            <p class="price">15 000 грн</p>
+        </div>
+
+        <div class="product">
+            <span class="discount">-10%</span>
+            <h2>Навушники</h2>
+            <p>Бездротові навушники для музики та дзвінків.</p>
+            <p class="price">3 500 грн</p>
+        </div>
+
+        <div class="banner">
+            <img src="banner.jpg" alt="Реклама">
+            <button class="banner-button">Детальніше</button>
+        </div>
+
+        <p>Додатковий текст сторінки...</p>
+        <p>Додатковий текст сторінки...</p>
+        <p>Додатковий текст сторінки...</p>
+
+        <div class="layers">
+            <div class="box1">Блок 1</div>
+            <div class="box2">Блок 2</div>
+        </div>
     </main>
-    <butoton class="help">
-        Допомога
-    </butoton>
+
+    <button class="help">Допомога</button>
+
 </body>
 </html>
