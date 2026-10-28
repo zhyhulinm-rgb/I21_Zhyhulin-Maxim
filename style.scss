@@ -1,0 +1,89 @@
+$primary-color: #4A90E2;
+$secondary-color: #e5e5e5;
+$text-color: #333333;
+$bg-colorF6: f4f7f6;
+$card-bg: #ffffff;
+$base-radius: 12px;
+$btn-radius: 8px;
+$spacing: 20px;
+@mixin button-style($bg, $color, $radius: $btn-radius) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  border-radius: $radius;
+  padding: 10px 20px;
+  font-size: 14px;
+  front-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+}
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    front-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.profile-card {
+    background-color: $card-bg;
+    border-radius: $base-radius;
+    padding: $spacing * 1.5;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transition: transform 0.3s ease;  
+}
+&:hover {
+    transform: translateY(-5px);
+}
+.profile-header {
+    .profile-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 12px;
+        border: 3px solid $primary-color;
+    }
+    .profile-name {
+        font-size: 22px;
+        margin: 8px 0 4px;
+    }
+    .profile-title {
+        front-size: 14px;
+        line-height: 1.5;
+        color: darken($text-color, 10%);
+        margin-bottom: $spacing;
+    }
+    .profile-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        .btn-primary {
+            @include button-style($primary-color, #ffffff);
+        }
+        .btn-secondary {
+            @include button-style($secondary-color, $text-color);
+    }
+}
+@media (max-width: 600px) {
+    .profile-card {
+        padding: $spacing;
+        max-width: 90%;
+    .profile-actions {
+        flex-direction: column;
+        .btn {
+            width: 100%;
+        }
+    }
+ }
+}
